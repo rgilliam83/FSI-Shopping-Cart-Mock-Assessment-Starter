@@ -4,7 +4,7 @@ function updateQuantity(displayQuantity) {
     let totalQuantity = document.querySelector('.total-quantity');
     totalQuantity.textContent = displayQuantity
 }
-//have to one to start
+//have one to start
 const quantDown = document.querySelector('#quantity-down');
 const quantUp = document.querySelector('#quantity-up');
 
