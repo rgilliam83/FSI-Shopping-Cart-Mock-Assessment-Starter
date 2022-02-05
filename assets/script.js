@@ -1,8 +1,8 @@
 let quantity = 1;
 
-function updateQuantity(displayQuantity){
-    let quantity = document.querySelector('.total-quantity');
-    quantity.textContent = displayQuantity
+function updateQuantity(displayQuantity) {
+    let totalQuantity = document.querySelector('.total-quantity');
+    totalQuantity.textContent = displayQuantity
 }
 //have to one to start
 const quantDown = document.querySelector('#quantity-down');
@@ -15,3 +15,9 @@ quantDown.addEventListener("click", function (e) {
     }
 });
 
+quantUp.addEventListener("click", function (e) {
+     {
+        quantity++;
+        updateQuantity(`Quantity: ${quantity}`)
+    }
+})
